@@ -7,7 +7,7 @@ namespace SeleniumPOMWalkthrough
     public static class AppConfigReader
     {
         public static readonly string BaseURL = ConfigurationManager.AppSettings["base_url"];
-        public static readonly string SignInPageURL = ConfigurationManager.AppSettings["signinpage_url"];
+        public static readonly string UserPageURL = ConfigurationManager.AppSettings["userpage_url"];
 
 
     }

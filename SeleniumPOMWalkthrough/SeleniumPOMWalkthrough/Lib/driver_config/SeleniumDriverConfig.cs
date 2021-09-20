@@ -8,10 +8,9 @@ using System.Threading.Tasks;
 
 namespace SeleniumPOMWalkthrough.Lib.driver_config
 {
-    public class SerleniumDriverConfig
+    public class SeleniumDriverConfig<T> where T : IWebDriver, new()
     {
-        public class SeleniumDriverConfig<T> where T : IWebDriver, new()
-        {
+        
             public IWebDriver Driver { get; set; }
 
             // constructor which calls a method to set up the driver depending on the browser we want
@@ -36,10 +35,10 @@ namespace SeleniumPOMWalkthrough.Lib.driver_config
 
             public void SetHeadlessChromeBrowser()
             {
-                Driver = new ChromeDriver();
+                Driver = new T();
                 ChromeOptions options = new ChromeOptions();
                 options.AddArgument("headless");
             }
-        }
+     
     }
 }

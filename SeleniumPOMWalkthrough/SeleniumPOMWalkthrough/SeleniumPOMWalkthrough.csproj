@@ -73,17 +73,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppConfigReader.cs" />
-    <Compile Include="Lib\driver_config\SerleniumDriverConfig.cs" />
+    <Compile Include="Lib\driver_config\SeleniumDriverConfig.cs" />
     <Compile Include="Lib\pages\AP_HomePage.cs" />
-    <Compile Include="Lib\pages\AP_SigninPage.cs" />
+    <Compile Include="Lib\pages\AP_ItemPage.cs" />
+    <Compile Include="Lib\pages\AP_UserPage.cs" />
     <Compile Include="Lib\pages\AP_Website.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tests\AP_ItemPage_Tests.cs" />
     <Compile Include="Tests\AP_Signin_Tests.cs" />
+    <Compile Include="Tests\AP_UserPortal_Tests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
