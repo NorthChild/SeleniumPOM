@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using SeleniumPOMWalkthrough.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -38,5 +39,15 @@ namespace SeleniumPOMWalkthrough.Lib.pages
         public void InputUserName(string username) => _userNameField.SendKeys(username);
         public void InputPassword(string password) => _passwordField.SendKeys(password);
         public string GetErrorMessage() => _errorMessage.Text;
+        
+
+        public void InputSigninCredentials(Credentials credentials)
+        {
+            _userNameField.SendKeys(credentials.Email);
+            _passwordField.SendKeys(credentials.Password);
+        }
+
+        
+
     }
 }

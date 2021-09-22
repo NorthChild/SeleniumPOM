@@ -39,18 +39,6 @@ namespace SeleniumPOMWalkthrough.Tests
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
         [OneTimeTearDown]
         public void CleanUp()
         {

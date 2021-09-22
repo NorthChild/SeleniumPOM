@@ -35,7 +35,7 @@ namespace SeleniumPOMWalkthrough.Tests
             AP_Website.AP_HomePage.ClickLoginButton();  
 
 
-            // navigate to api silent page
+            // navigate to api signin page
             //AP_Website.AP_HomePage.VisitSignInPage();
 
             // assert that title is correct

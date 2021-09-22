@@ -32,7 +32,6 @@ namespace SeleniumPOMWalkthrough.Tests
             AP_Website.AP_UserPage.ClickItemToView();
 
             Assert.That(AP_Website.AP_UserPage.GetPageUrl(), Is.EqualTo("https://www.saucedemo.com/inventory-item.html?id=4"));
-
         }
 
 

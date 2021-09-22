@@ -10,6 +10,7 @@ namespace SeleniumPOMWalkthrough.Lib.pages
     public class AP_ItemPage
     {
         private IWebDriver _seleniumDriver;
+
         // set homepageurl
         private string _userPageUrl = AppConfigReader.UserPageURL;
 

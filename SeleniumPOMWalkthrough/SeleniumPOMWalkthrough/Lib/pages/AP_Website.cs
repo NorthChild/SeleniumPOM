@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
 using SeleniumPOMWalkthrough.Lib.driver_config;
-
+using SeleniumPOMWalkthrough.lib;
+using SeleniumPOMWalkthrough.lib.pages;
 
 namespace SeleniumPOMWalkthrough.Lib.pages
 {
@@ -17,7 +18,7 @@ namespace SeleniumPOMWalkthrough.Lib.pages
         public IWebDriver SeleniumDriver { get; set; }
         public AP_HomePage AP_HomePage { get; set; }
         public AP_UserPage AP_UserPage { get; set; }
-        public AP_UserPage AP_ItemPage { get; set; }
+        public AP_ItemPage AP_ItemPage { get; set; }
         #endregion
 
 
